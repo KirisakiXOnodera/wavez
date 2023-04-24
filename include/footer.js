@@ -6,8 +6,8 @@ class Footer extends HTMLElement {
     connectedCallback(){
         this.innerHTML = `
     <footer>
-    <div class = "footer">
-    <p1 class = "Footer-Co_txt">Company</p1>
+    <div class = "w-1920 h-269.49 bg-primary absolute left-0 right-0 top-86.54 bottom--0.02">
+    <p1 class = "text-white">Company</p1>
     </div>
     </footer>
         `;

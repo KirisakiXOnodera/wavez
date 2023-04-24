@@ -516,8 +516,199 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.bg-blue-400 {
+.absolute {
+  position: absolute;
+}
+
+.left-\[160px\] {
+  left: 160px;
+}
+
+.left-\[49px\] {
+  left: 49px;
+}
+
+.right-\[401px\] {
+  right: 401px;
+}
+
+.right-\[550px\] {
+  right: 550px;
+}
+
+.right-\[66px\] {
+  right: 66px;
+}
+
+.top-\[43px\] {
+  top: 43px;
+}
+
+.top-\[50px\] {
+  top: 50px;
+}
+
+.top-\[60px\] {
+  top: 60px;
+}
+
+.flex {
+  display: flex;
+}
+
+.h-\[147px\] {
+  height: 147px;
+}
+
+.h-\[26px\] {
+  height: 26px;
+}
+
+.h-\[46px\] {
+  height: 46px;
+}
+
+.h-\[59\.64px\] {
+  height: 59.64px;
+}
+
+.h-\[59px\] {
+  height: 59px;
+}
+
+.h-\[73px\] {
+  height: 73px;
+}
+
+.w-\[193px\] {
+  width: 193px;
+}
+
+.w-\[263px\] {
+  width: 263px;
+}
+
+.w-\[48px\] {
+  width: 48px;
+}
+
+.w-\[67px\] {
+  width: 67px;
+}
+
+.w-\[68px\] {
+  width: 68px;
+}
+
+.w-\[76px\] {
+  width: 76px;
+}
+
+.w-\[87px\] {
+  width: 87px;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-\[10px\] {
+  gap: 10px;
+}
+
+.gap-\[3\.64px\] {
+  gap: 3.64px;
+}
+
+.bg-primary {
   --tw-bg-opacity: 1;
-  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
+  background-color: rgb(4 21 29 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.p-0 {
+  padding: 0px;
+}
+
+.p-\[10px\] {
+  padding: 10px;
+}
+
+.align-middle {
+  vertical-align: middle;
+}
+
+.font-Asul {
+  font-family: Asul, sans-serif;
+}
+
+.text-\[44px\] {
+  font-size: 44px;
+}
+
+.text-\[19px\] {
+  font-size: 19px;
+}
+
+.text-\[26px\] {
+  font-size: 26px;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.not-italic {
+  font-style: normal;
+}
+
+.leading-\[53px\] {
+  line-height: 53px;
+}
+
+.leading-\[26px\] {
+  line-height: 26px;
+}
+
+.leading-\[36px\] {
+  line-height: 36px;
+}
+
+.tracking-\[0\.18em\] {
+  letter-spacing: 0.18em;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
