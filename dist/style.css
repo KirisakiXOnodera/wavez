@@ -552,6 +552,94 @@ video {
   top: 60px;
 }
 
+.bottom-\[-0\.02\%\] {
+  bottom: -0.02%;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.top-\[86\.54\%\] {
+  top: 86.54%;
+}
+
+.bottom-\[86\.54\%\] {
+  bottom: 86.54%;
+}
+
+.left-\[347px\] {
+  left: 347px;
+}
+
+.top-\[36px\] {
+  top: 36px;
+}
+
+.bottom-\[-0\.49\%\] {
+  bottom: -0.49%;
+}
+
+.bottom-\[36px\] {
+  bottom: 36px;
+}
+
+.bottom-\[20px\] {
+  bottom: 20px;
+}
+
+.bottom-\[10px\] {
+  bottom: 10px;
+}
+
+.top-\[26px\] {
+  top: 26px;
+}
+
+.top-\[16px\] {
+  top: 16px;
+}
+
+.top-\[100px\] {
+  top: 100px;
+}
+
+.top-\[120px\] {
+  top: 120px;
+}
+
+.left-\[570\] {
+  left: 570;
+}
+
+.left-\[570px\] {
+  left: 570px;
+}
+
+.left-\[793px\] {
+  left: 793px;
+}
+
+.order-1 {
+  order: 1;
+}
+
+.order-2 {
+  order: 2;
+}
+
+.order-3 {
+  order: 3;
+}
+
+.order-4 {
+  order: 4;
+}
+
 .flex {
   display: flex;
 }
@@ -580,6 +668,18 @@ video {
   height: 73px;
 }
 
+.h-\[146px\] {
+  height: 146px;
+}
+
+.h-\[270px\] {
+  height: 270px;
+}
+
+.h-\[186px\] {
+  height: 186px;
+}
+
 .w-\[193px\] {
   width: 193px;
 }
@@ -606,6 +706,58 @@ video {
 
 .w-\[87px\] {
   width: 87px;
+}
+
+.w-\[127px\] {
+  width: 127px;
+}
+
+.w-\[85px\] {
+  width: 85px;
+}
+
+.w-\[54px\] {
+  width: 54px;
+}
+
+.w-\[115\[x\]\] {
+  width: 115[x];
+}
+
+.w-\[115px\] {
+  width: 115px;
+}
+
+.w-\[100px\] {
+  width: 100px;
+}
+
+.w-\[78px\] {
+  width: 78px;
+}
+
+.w-\[97px\] {
+  width: 97px;
+}
+
+.w-\[102px\] {
+  width: 102px;
+}
+
+.w-\[69px\] {
+  width: 69px;
+}
+
+.w-\[63px\] {
+  width: 63px;
+}
+
+.flex-none {
+  flex: none;
+}
+
+.flex-grow-0 {
+  flex-grow: 0;
 }
 
 .flex-row {
@@ -646,12 +798,33 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-blue-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
+}
+
 .p-0 {
   padding: 0px;
 }
 
 .p-\[10px\] {
   padding: 10px;
+}
+
+.pt-\[20px\] {
+  padding-top: 20px;
+}
+
+.pt-\[100px\] {
+  padding-top: 100px;
+}
+
+.pt-\[200px\] {
+  padding-top: 200px;
+}
+
+.pt-\[150px\] {
+  padding-top: 150px;
 }
 
 .align-middle {
