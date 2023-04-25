@@ -5,40 +5,37 @@ class Footer extends HTMLElement {
 
     connectedCallback(){
         this.innerHTML = `
-        <footer class = "bg-primary left-0 right-0 h-[270px] bottom-[-0.49%]">
-        <div class ="flex-col items-start p-0 g-[14px] absolute w-[127px] h-[146px] left-[347px] ">
-        <p class = "text-white font-Alata not-italic font-normal
-        text-[19px] leading-[26px] capitalize w-[85px] h-[26px] order-0 flex-grow-0 flex-none">Company</p>
-        <p class = "text-white font-Alata not-italic font-normal
-        text-[19px] leading-[26px] capitalize w-[54px] h-[26px] order-1 flex-grow-0 flex-none">About</p>
-        <p class = "text-white font-Alata not-italic font-normal
-        text-[19px] leading-[26px] capitalize w-[54px] h-[26px] order-2 flex-grow-0 flex-none">Jobs</p>
-        <p class = "text-white font-Alata not-italic font-normal
-        text-[19px] leading-[26px] capitalize w-[127px] h-[26px] order-3 flex-grow-0 flex-none">For The Record</p>
+        <footer class="bg-custom-color font-alata">
+    <div class ="flex max-w-[270px] mx-auto mx-auto items-center">
+        <div class = "grid grid-cols-4 gap-x-[150px]">
+            <div class="mb-5 text-white font-[19px] leading-[26px]">
+                <h4 class="">Company</h4>
+                <ul>
+                    <li class="text-gray-600">About</li>
+                    <li class="text-gray-600">Jobs</li>
+                    <li class="text-gray-600">For The Record</li>
+                </ul>
+            </div>
+            <div class="mb-5 text-white font-[19px] leading-[26px]">
+                <h4 class="">Communities</h4>
+                <ul>
+                    <li class="text-gray-600">Developers</li>
+                    <li class="text-gray-600">Advertising</li>
+                    <li class="text-gray-600">Investors</li>
+                </ul>
+            </div>
+            <div class="mb-5 text-white font-[19px] leading-[26px]">
+                <h4 class="">Useful Links</h4>
+                <ul>
+                    <li class="text-gray-600">Support</li>
+                    <li class="text-gray-600">Legal</li>
+                    <li class="text-gray-600">Privacy</li>
+                    <li class="text-gray-600">Cookies</li>
+                </ul>
+            </div>
         </div>
-        <div class ="flex-col items-start p-0 g-[14px] absolute w-[115px] h-[146px] left-[570px] ">
-            <p class = "text-white font-Alata not-italic font-normal
-        text-[19px] leading-[26px] capitalize w-[115px] h-[26px] order-0 flex-grow-0 flex-none">Communities</p>
-        <p class = "text-white font-Alata not-italic font-normal
-        text-[19px] leading-[26px] capitalize w-[97px] h-[26px] order-1 flex-grow-0 flex-none">Developers</p>
-        <p class = "text-white font-Alata not-italic font-normal
-        text-[19px] leading-[26px] capitalize w-[100px] h-[26px] order-2 flex-grow-0 flex-none">Advertising</p>
-        <p class = "text-white font-Alata not-italic font-normal
-        text-[19px] leading-[26px] capitalize w-[78px] h-[26px] order-3 flex-grow-0 flex-none">Investors</p>
         </div>
-        <div class ="flex-col items-start p-0 g-[14px] absolute w-[102px] h-[186px] left-[793px] ">
-            <p class = "text-white font-Alata not-italic font-normal
-        text-[19px] leading-[26px] capitalize w-[102px] h-[26px] order-0 flex-grow-0 flex-none">Useful Links</p>
-        <p class = "text-white font-Alata not-italic font-normal
-        text-[19px] leading-[26px] capitalize w-[69px] h-[26px] order-1 flex-grow-0 flex-none">Support</p>
-        <p class = "text-white font-Alata not-italic font-normal
-        text-[19px] leading-[26px] capitalize w-[48px] h-[26px] order-2 flex-grow-0 flex-none">Legal</p>
-        <p class = "text-white font-Alata not-italic font-normal
-        text-[19px] leading-[26px] capitalize w-[63px] h-[26px] order-3 flex-grow-0 flex-none">Privacy</p>
-        <p class = "text-white font-Alata not-italic font-normal
-        text-[19px] leading-[26px] capitalize w-[68px] h-[26px] order-4 flex-grow-0 flex-none">Cookies</p>
-        </div>
-        </footer>
+    </footer>
         `;
     }        
 }
