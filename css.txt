@@ -150,22 +150,22 @@ body {
 }
 
 .button-container button {
-  width: 150px;
-  height: 35px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  x width: 150px;
+  x height: 35px;
+  x margin-top: 15px;
+  x margin-bottom: 15px;
 
-  font-family: "Alata";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 33px;
-  text-align: center;
-  letter-spacing: 0.2px;
+  x font-family: "Alata";
+  x f ont-style: normal;
+  x font-weight: 400;
+  x font-size: 14px;
+  x line-height: 33px;
+  x text-align: center;
+  x letter-spacing: 0.2px;
 
-  background: rgba(154, 127, 105, 0.9);
-  border-radius: 30px;
-  border: none;
+  x background: rgba(154, 127, 105, 0.9);
+  x border-radius: 30px;
+  x border: none;
 }
 
 .button-container button:hover {
@@ -178,14 +178,14 @@ body {
 }
 
 .signup-banner {
-  margin-top: 10px;
-  font-family: "Alata";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
+  x margin-top: 10px;
+  x font-family: "Alata";
+  x font-style: normal;
+  x font-weight: 400;
+  x font-size: 12px;
   line-height: 22px;
-  text-align: center;
-  text-transform: uppercase;
+  x text-align: center;
+  x text-transform: uppercase;
   border-bottom: 2px solid black;
 }
 
@@ -203,12 +203,12 @@ body {
 }
 
 .login-footer {
-  margin-top: 15px;
-  font-family: "Alata";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 25px;
+  x margin-top: 15px;
+  x font-family: "Alata";
+  x font-style: normal;
+  x font-weight: 400;
+  x font-size: 14px;
+  x line-height: 25px;
   text-align: center;
 }
 
