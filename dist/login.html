@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="x-icon" href="icon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <title>Login</title>
+  </head>
+  <body class="flex align-middle justify-center bg-slate-400 mt-24">
+    <div
+      class="flex relative w-container-width h-login-height bg-white rounded-3xl"
+    >
+      <div class="flex justify-center align-middle w-image-width">
+        <img src="/img/login-img.png" class="w-full h-full rounded-l-3xl" />
+      </div>
+      <div
+        class="flex flex-col align-middle w-login-width bg-login-color rounded-r-3xl"
+      >
+        <div class="flex flex-row align-middle justify-center mt-6 w-full">
+          <img src="/assets/wavesLogo.png" class="w-1/3 h-4/5 self-center" />
+          <h1
+            class="font-alata font-normal text-5xl tracking-wide text-wavez-color self-center"
+          >
+            WAVEZ
+          </h1>
+        </div>
+
+        <form class="flex flex-col">
+          <div class="self-center">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              class="w-60 h-9 rounded-full pl-3 pr-3 text-sm font-alata border-solid border border-neutral-500 transition ease-in-out border-current outline-none text-login-color bg-input-bg-color hover:bg-sky-700"
+              autofocus
+              required
+            />
+          </div>
+          <div class="self-center mt-3">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+              class="w-60 h-9 rounded-3xl"
+              required
+            />
+          </div>
+
+          <div class="form-item-other">
+            <a href="#">forgot my password?</a>
+            <label for="remeberMeCheckbox">
+              <input type="checkbox" id="remeberMeCheckbox" />Remember me
+            </label>
+          </div>
+        </form>
+        <div class="button-container">
+          <button type="submit">LOG IN</button>
+        </div>
+
+        <h2 class="signup-banner">SIGN IN WITH</h2>
+
+        <div class="login-card-social">
+          <a href="#">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-apple"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-google"></i>
+          </a>
+        </div>
+
+        <div class="login-footer">
+          Don't have an account? <a href="#">Sign up.</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
