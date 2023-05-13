@@ -6,8 +6,8 @@ class Footer extends HTMLElement {
     connectedCallback(){
         this.innerHTML = `
         <!-- FOOTER -->
-            <div class="flex flex-row flex-wrap font-normal text-base mt-auto h-96 z-40">
-                <div class="w-40 h-36 mx-5 my-2">
+            <div class="flex flex-col md:flex-row flex-wrap font-normal text-sm sm:text-base mt-auto h-auto pb-32 z-40">
+                <div class="w-fit h-fit mx-5 my-2">
                     <ul class="text-custom-color-footer-text px-3 space-y-2">
                         <li class="text-white py-3">Company</li>
                         <li><a href="#" class="hover:text-white">About</a></li>
@@ -15,7 +15,7 @@ class Footer extends HTMLElement {
                         <li><a href="#" class="hover:text-white">For The Record</a></li>
                     </ul>
                 </div>
-                <div class="w-32 h-36 mx-5 my-2">
+                <div class="w-fit h-fit mx-5 my-2">
                     <ul class="text-custom-color-footer-text px-3 space-y-2">
                         <li class="text-white py-3">Communities</li>
                         <li><a href="#" class="hover:text-white">Developers</a></li>
@@ -23,7 +23,7 @@ class Footer extends HTMLElement {
                         <li><a href="#" class="hover:text-white">Investors</a></li>
                     </ul>
                 </div>
-                <div class="w-32 h-36 mx-5 my-2">
+                <div class="w-fit h-fit mx-5 my-2">
                     <ul class="text-custom-color-footer-text px-3 space-y-2">
                         <li class="text-white py-3">Support</li>
                         <li><a href="#" class="hover:text-white">Support</a></li>
@@ -35,7 +35,7 @@ class Footer extends HTMLElement {
 
 
                 <!-- SOCIAL ICONS -->
-                <div class="flex items-start flex-grow flex-wrap justify-end pr-6">
+                <div class="flex flex-grow flex-wrap justify-start md:justify-end pr-6 pl-5">
                     <button class="w-10 h-10 my-3 mx-3 bg-custom-color-footer-social-icons rounded-full flex items-center justify-center">
                         <a href="exp.html" class="w-7 h-7">
                             <svg class="text-white fill-current hover:text-custom-color-navbar-icons-hover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">

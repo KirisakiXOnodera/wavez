@@ -5,12 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="icon" href="/assets/wavesLogo.png">
+    <title>Wavez - Queue</title>
+    <script src="https://kit.fontawesome.com/af7e1c2216.js" crossorigin="anonymous"></script>
 </head>
 <body class="p-0 m-0 font-alata h-screen bg-custom-color">
     <div class="flex">
         <!-- SIDE NAVBAR -->
-        <aside class="hidden md:block w-60 fixed left-0 top-0 h-full z-50 bg-gradient-to-t from-custom-color-playlist-card-non-pinned-text to-custom-color">
+        <aside class="hidden lg:block w-60 fixed left-0 top-0 h-full z-50 bg-gradient-to-t from-custom-color-playlist-card-non-pinned-text to-custom-color">
 
             <!-- LOGO -->
             <a href="#">
@@ -24,8 +30,7 @@
                         <a href="#" class = "flex justify-center space-x-5 mt-6 mb-3 text-white py-1 px-10 hover:text-custom-color-sidebar-brown-hover">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-                              </svg>
-                              
+                            </svg>
                             <span>Home</span>
                         </a>
                     </li>
@@ -38,7 +43,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="" class="flex justify-center text-white space-x-5 mt-6 mb-3 py-1 px-10 rounded-full ml-10 mr-10  bg-custom-color-sidebar-brown  hover:bg-custom-color-navbar-icons-hover focus:bg-black focus:outline-none active:bg-custom-color-sidebar-brown hover:text-white">
+                        <a href="" class="flex justify-center text-white space-x-5 mt-6 mb-3 py-1 px-10 hover:text-custom-color-sidebar-brown-hover">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 9l10.5-3m0 6.553v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 11-.99-3.467l2.31-.66a2.25 2.25 0 001.632-2.163zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 01-.99-3.467l2.31-.66A2.25 2.25 0 009 15.553z" />
                             </svg>
@@ -46,7 +51,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="" class="flex text-white justify-center space-x-5 mt-6 mb-3 py-1 px-10 hover:text-custom-color-sidebar-brown-hover">
+                        <a href="" class="flex justify-center text-white space-x-5 mt-6 mb-3 py-1 px-10 rounded-full ml-10 mr-10  bg-custom-color-sidebar-brown  hover:bg-custom-color-navbar-icons-hover focus:bg-black focus:outline-none active:bg-custom-color-sidebar-brown hover:text-white">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
                             </svg>
@@ -78,92 +83,114 @@
         </aside>
 
         <!-- MAIN CONTENT -->
-        <main class="flex flex-col flex-grow pl-80 text-white h-auto">
+        <main class="flex flex-col flex-grow lg:pl-80 text-white h-auto">
            <!-- TOP NAVBAR -->
            <navbar-component></navbar-component>
            <script src="/include/topNavbar.js"></script>
-
+           
             <!-- CONTENTS -->
             <!-- Playing Music -->
             <div class="h-auto pt-15 font-alata flex flex-col">
-                <div class="flex flex-col ">
-                <h1 class="text-3xl">Queue</h1>
-                <p class="text-md mt-1 text-custom-color-queue-text">Now Playing</p>
+                <div class="flex flex-col pl-5">
+                    <h1 class="text-[28px] pb-2 md:text-[32px]">Queue</h1>
+                    <p class="text-[20px] mt-1 text-custom-color-queue-text pb-2 md:text-[24px]">Now Playing</p>
                 </div>
-                <div class="grid grid-cols-6 items-center gap-[200px]">
-                <div class="flex flex-row col-span-3">
-                    <img src="/assets/queue-assets/wave_playing.png" class="w-[22px] h-[34px] m-10">
-                    <img src="/assets/queue-assets/song-1.png" class="w-auto h-auto m-5">
-                    <div class="flex flex-col justify-center">
-                        <div>King For A Day</div>
-                        <div>Pierce The Veil</div>
+                <div class="grid grid-cols-4 items-center">
+                    <div class="flex flex-row col-span-4 items-center md:col-span-2">
+                        <img src="/assets/queue-assets/wave_playing.png" class="w-auto h-auto m-4 pl-2">
+                        <img src="/assets/queue-assets/song-1.png" class="w-[15%] h-[15%] m-2">
+                            <div class="flex flex-grow flex-col justify-center">
+                                <p class="text-[12px] md:text-[18px]">King For A Day</p>
+                                <p class="text-[10px] md:text-[16px]">Pierce The Veil</p>
+                            </div>
+                            <div class=" space-y-2 md:hidden pr-5">
+                                <div class="w-8 h-0.5 bg-white"></div>
+                                <div class="w-8 h-0.5 bg-white"></div>
+                                <div class="w-8 h-0.5 bg-white"></div>
+                            </div>
                     </div>
-                </div>
-                <div class="col-span-2 text-start">
-                    <p>Collide With The Sky</p>
-                </div>
-                <div>
-                    <p>3:56</p>
-                </div>
+                    
+                    <div class=" hidden text-start md:block col-span">
+                        <p class="text-[16px]">Collide With The Sky</p>
+                    </div>
+                    <div class="hidden md:block md:pl-[100px]">
+                        <p>3:56</p>
+                    </div>
+                
                 </div>
             </div>
              <!-- Queued Music -->
-             <div class="h-auto pb-5 pt-15 font-alata flex flex-col">
-                <div class="flex flex-col ">
-                <p class="text-2xl mt-1 text-custom-color-queue-text">Next in Queue</p>
+            <div class="h-auto pb-5 pt-15 font-alata flex flex-col">
+                <div class="flex flex-col pl-5">
+                    <p class="text-[20px] mt-1 text-custom-color-queue-text md:text-[24px]">Next in Queue</p>
                 </div>
-            <!-- 1st Queued Music -->
-            <div class="grid grid-cols-6 items-center gap-[200px]">
-                <div class="flex flex-row col-span-3">
-                    <div class="w-[22px] h-[34px] m-10 text-2xl text-custom-color-queue-text">2</div>
-                    <img src="/assets/queue-assets/song-3.png" class="w-auto h-auto m-5">
-                    <div class="flex flex-col justify-center">
-                        <div>VOID</div>
-                        <div>Melanie Martinez</div>
+                <!-- 1st Queued Music -->
+                <div class="grid grid-cols-4 items-center">
+                    <div class="flex flex-row col-span-4 items-center md:col-span-2">
+                        <p class="w-auto h-auto m-4 p-3 text-[26px] text-custom-color-queue-text">1</p>
+                            <img src="/assets/queue-assets/song-3.png" class="w-[15%] h-[15%] m-2">
+                                <div class="flex flex-grow flex-col justify-center">
+                                    <p class="text-[12px] md:text-[18px]">VOID</p>
+                                    <p class="text-[10px] md:text-[16px]">Melanie Martinez</p>
+                                </div>
+                                <div class="space-y-2 md:hidden pr-5">
+                                    <div class="w-8 h-0.5 bg-white"></div>
+                                    <div class="w-8 h-0.5 bg-white"></div>
+                                    <div class="w-8 h-0.5 bg-white"></div>
+                                </div>
+                        </div>
+                    <div class="hidden text-start md:block col-span">
+                        <p>PORTALS</p>
                     </div>
-                </div>
-                <div class="col-span-2 text-start">
-                    <p>PORTALS</p>
-                </div>
-                <div>
-                    <p>3:56</p>
-                </div>
+                    <div class="hidden md:block md:pl-[100px]">
+                        <p>3:56</p>
+                    </div>
                 </div>
 
-            <!-- 2nd Queued Music -->
-            <div class="grid grid-cols-6 items-center gap-[200px]">
-                <div class="flex flex-row col-span-3">
-                    <div class="w-[22px] h-[34px] m-10 text-2xl text-custom-color-queue-text">3</div>
-                    <img src="/assets/queue-assets/song-2.png" class="w-auto h-auto m-5">
-                    <div class="flex flex-col justify-center">
-                        <div>Born To Die</div>
-                        <div>Lana Del Rey</div>
+                <!-- 2nd Queued Music -->
+                <div class="grid grid-cols-4 items-center">
+                    <div class="flex flex-row col-span-4 items-center md:col-span-2">
+                        <p class="w-auto h-auto m-4 p-2 text-[26px] text-custom-color-queue-text">2</p>
+                            <img src="/assets/queue-assets/song-2.png" class="w-[15%] h-[15%] m-2">
+                                <div class="flex flex-grow flex-col justify-center">
+                                    <p class="text-[12px] md:text-[18px]">Born To Die</p>
+                                    <p class="text-[10px] md:text-[16px]">Lana Del Rey</p>
+                                </div>
+                                <div class="space-y-2 md:hidden pr-5">
+                                    <div class="w-8 h-0.5 bg-white"></div>
+                                    <div class="w-8 h-0.5 bg-white"></div>
+                                    <div class="w-8 h-0.5 bg-white"></div>
+                                </div>
+                        </div>
+                    <div class="hidden text-start md:block col-span">
+                        <p>Born To Die</p>
                     </div>
-                </div>
-                <div class="col-span-2 text-start">
-                    <p>Born To Die</p>
-                </div>
-                <div>
-                    <p>3:56</p>
-                </div>
+                    <div class="hidden md:block md:pl-[100px]">
+                        <p>3:56</p>
+                    </div>
                 </div>
 
-            <!-- 3rd Queued Music -->
-            <div class="grid grid-cols-6 items-center gap-[200px]">
-                <div class="flex flex-row col-span-3">
-                    <div class="w-[22px] h-[34px] m-10 text-2xl text-custom-color-queue-text">4</div>
-                    <img src="/assets/queue-assets/song-4.png" class="w-auto h-auto m-5">
-                    <div class="flex flex-col justify-center">
-                        <div>Tally</div>
-                        <div>BLACKPINK</div>
+                <!-- 3rd Queued Music -->
+                <div class="grid grid-cols-4 items-center">
+                    <div class="flex flex-row col-span-4 items-center md:col-span-2">
+                        <p class="w-auto h-auto m-4 p-2 text-[26px] text-custom-color-queue-text">3</p>
+                            <img src="/assets/queue-assets/song-4.png" class="w-[15%] h-[15%] m-2">
+                                <div class="flex flex-grow flex-col justify-center">
+                                    <p class="text-[12px] md:text-[18px]">Tally</p>
+                                    <p class="text-[10px] md:text-[16px]">BLACKPINK</p>
+                                </div>
+                                <div class="space-y-2 md:hidden pr-5">
+                                    <div class="w-8 h-0.5 bg-white"></div>
+                                    <div class="w-8 h-0.5 bg-white"></div>
+                                    <div class="w-8 h-0.5 bg-white"></div>
+                                </div>
+                        </div>
+                    <div class="hidden text-start md:block col-span">
+                        <p>Pink Venom</p>
                     </div>
-                </div>
-                <div class="col-span-2 text-start">
-                    <p>Pink Venom</p>
-                </div>
-                <div>
-                    <p>3:56</p>
-                </div>
+                    <div class="hidden md:block md:pl-[100px]">
+                        <p>3:56</p>
+                    </div>
                 </div>
                 
             </div>
@@ -174,7 +201,7 @@
         </main>
 
         <!-- PLAYBAR -->
-        <div class="w-[90%] ml-[80px] mr-[80px] pl-5 fixed h-[90px] bottom-5 z-50 bg-custom-color-playbar opacity-80 rounded-3xl  mt-auto grid grid-cols-4 items-center text-center">
+        <!-- <div class="w-[90%] ml-[80px] mr-[80px] pl-5 fixed h-[90px] bottom-5 z-50 bg-custom-color-playbar opacity-80 rounded-3xl  mt-auto grid grid-cols-4 items-center text-center">
             <div class="w-56 flex items-center text-start">
                 <img src="/assets/addplaylist-assets/album pic.png" alt="album" class="flex-inline-block w-16 h-16 rounded-lg">
                 <div>
@@ -202,9 +229,9 @@
                 </div>
                 <div class="flex relative items-center mt-3 ml-48 mr-48">
                 <p class="text-white">2:00</p>
-                <!-- <svg class="w-96 h-2 ml-3 mr-3" viewBox="0 0 740 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <svg class="w-96 h-2 ml-3 mr-3" viewBox="0 0 740 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <line y1="1" x2="740" y2="1" stroke="#E9EBE9" stroke-opacity="0.6" stroke-width="2"/>
-                  </svg> -->
+                  </svg> 
                   <div class="w-96">
                     <input class="w-[370px]" type="range" min="0" max="356" value="200">
                   </div>
@@ -228,7 +255,7 @@
                          
                 </div>
               </div>            
-    </div>
+    </div> -->
         
     </div>
     <script src="/include/profile-hover.js">profileHover();</script>
